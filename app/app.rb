@@ -69,7 +69,7 @@ end
 match '/:id/send/?' do
   @id = params[:id]
   port = ':'+request.port.to_s if request.port != 80
-  url = request.scheme+'://'+request.host+port+'/'+@id
+  url = request.url.sub('send/','')
 
   Mailer.send('hello@joshellington.com', @id, 'Here is your link: '+url)
 
