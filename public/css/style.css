@@ -43,8 +43,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #2FA3FF; color: #fff; text-shadow: none; }
+::selection { background: #2FA3FF; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -87,7 +87,7 @@ small { font-size: 85%; }
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
-sub { bottom: -0.25em; }
+sub { bottom: -0.15em; }
 
 
 /* =============================================================================
@@ -248,6 +248,11 @@ h2 {
   background:#fff;
   float:left;
   display:inline;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
   .section:hover {
@@ -274,6 +279,11 @@ a.share {
   background:#2FA3FF;
   text-decoration:none;
   padding:10px 18px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
   a.share:hover {
@@ -293,7 +303,6 @@ a.share {
    ========================================================================== */
 
 @media only screen and (max-width: 480px) {
-
   body {
     padding:30px 0;
   }
@@ -315,9 +324,22 @@ a.share {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 799px) {
   /* Style adjustments for viewports 768px and over go here */
+  body {
+    padding:30px 0;
+  }
 
+  #wrapper {
+    width:100%;
+  }
+
+  .section {
+    width:100%;
+    padding:20px 0;
+    float:none;
+    display:block;
+  }
 }
 
 
