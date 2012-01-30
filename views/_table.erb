@@ -1,0 +1,43 @@
+<div id="sections">
+  <div class="section browser">
+    <h5>Browser</h5>
+    <h4><%= client[:browser].name %> <%= client[:browser].version %></h4>
+  </div>
+
+  <div class="section ip">
+    <h5>IP Address</h5>
+    <h4><%= client[:ip] %></h4>
+  </div>
+
+  <div class="section os">
+    <h5>Operating System</h5>
+    <h4><%= client[:browser].os %></h4>
+  </div>
+
+  <div class="section js">
+    <h5>JavaScript</h5>
+    <h4>Disabled</h4>
+  </div>
+
+  <div class="section cookies">
+    <h5>Cookies</h5>
+    <h4>Disabled</h4>
+  </div>
+
+  <div class="section flash">
+    <h5>Flash</h5>
+    <h4>Disabled</h4>
+  </div>
+
+  <div class="section screen-resolution">
+    <h5>Screen Resolution</h5>
+    <h4>Disabled</h4>
+  </div>
+
+  <div class="section browser-size">
+    <h5>Browser Size</h5>
+    <h4>Disabled</h4>
+  </div>
+</div>
+
+<a href="/<%= @share %>/send" class="share">Share</a>
