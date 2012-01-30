@@ -216,6 +216,11 @@ h1,h2,h3,h4,h5 {
   padding:0;margin:0;
 }
 
+a {
+  color:#2FA3FF;
+  text-decoration:none;
+}
+
 #wrapper {
   width:800px;
   margin:0 auto;
